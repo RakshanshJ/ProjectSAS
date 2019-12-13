@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="com.tcpl.sas" auto-namespace-tables="true">
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+    <author>Rakshansh</author>
+    <namespace>sas</namespace>
+    <entity local-service="true" remote-service="true" uuid="true" name="RequirementData" table="requirementdata">
+		
+		<!-- PK fields -->
+
+    	<column name="requirementDataId" primary="true" type="long" />
+    	
+        <column name="skillSetId" type="String" />
+        <column name="experience" type="long" />
+        <column name="jd" type="String" />
+        <column name="budget" type="long" />
+        <column name="remarks" type="String" />
+        <column name="status" type="String" />
+
+    	<column name="groupId" type="long" />
+    	<column name="userId" type="long" />
+    	<column name="createDate" type="Date" />
+    	<column name="modifiedDate" type="Date" />
+
+    	<order by="asc">
+    		<order-column name="requirementDataId" />
+    	</order>
+
+    	<!-- Finder methods -->
+
+    	<finder name="FindByReqId" return-type="Collection">
+    		<finder-column name="requirementDataId" />
+    	</finder>
+    	
+    	<finder name="Status" return-type="RequirementData">
+    		<finder-column name="status" />
+    	</finder>
+
+    	<!-- References -->
+
+    	<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+    	<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+
+    </entity>
+    
+    <entity local-service="true" remote-service="true" uuid="true" name="SkillSet" table="skillset">
+    	
+    	<column name="skillSetId" type="long" primary="true" />
+    	
+    	<column name="skillSetName" type="String" />
+    	
+    	<column name="groupId" type="long" />
+    	<column name="userId" type="long" />
+    	<column name="createDate" type="Date" />
+    	<column name="modifiedDate" type="Date" />
+    
+    	<order by="asc">
+    		<order-column name="skillSetName" />
+    	</order>
+    
+    </entity>
+</service-builder>

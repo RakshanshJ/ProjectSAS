@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailsEditorPageState>
+    <ContentOutlineState>
+        <Root>
+            <Children>
+                <MasterDetailsNodeState>
+                    <Label>Service Builder</Label>
+                    <Expanded>true</Expanded>
+                    <Children>
+                        <MasterDetailsNodeState>
+                            <Label>Entities</Label>
+                            <Expanded>true</Expanded>
+                            <Children>
+                                <MasterDetailsNodeState>
+                                    <Label>requirementData</Label>
+                                    <Expanded>true</Expanded>
+                                    <Children>
+                                        <MasterDetailsNodeState>
+                                            <Label>Finders</Label>
+                                            <Selected>true</Selected>
+                                            <Children>
+                                                <MasterDetailsNodeState>
+                                                    <Label>findByReqId</Label>
+                                                    <Expanded>true</Expanded>
+                                                </MasterDetailsNodeState>
+                                            </Children>
+                                        </MasterDetailsNodeState>
+                                    </Children>
+                                </MasterDetailsNodeState>
+                            </Children>
+                        </MasterDetailsNodeState>
+                    </Children>
+                </MasterDetailsNodeState>
+            </Children>
+        </Root>
+        <Ratio>0.29941860465116277</Ratio>
+    </ContentOutlineState>
+</MasterDetailsEditorPageState>

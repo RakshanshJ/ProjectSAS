@@ -1,0 +1,10 @@
+Bundle-Name: sas-common-db-api
+Bundle-SymbolicName: com.tcpl.sas.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.tcpl.sas.exception,\
+	com.tcpl.sas.model,\
+	com.tcpl.sas.service,\
+	com.tcpl.sas.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../sas-common-db-service/service.xml

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.tcpl.sas.model.EvalVendor">
+		<field name="evalVendorId" type="long" />
+		<field name="empName" type="String" />
+		<field name="empEmail" type="String" />
+		<field name="audioId" type="long" />
+		<field name="audioPath" type="String" />
+		<field name="videoId" type="long" />
+		<field name="videoPath" type="String" />
+		<field name="imageId" type="long" />
+		<field name="imagePath" type="String" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.tcpl.sas.model.RequirementData">
+		<field name="uuid" type="String" />
+		<field name="requirementDataId" type="long" />
+		<field name="skillSetId" type="String" />
+		<field name="experience" type="long" />
+		<field name="jd" type="String" />
+		<field name="budget" type="long" />
+		<field name="remarks" type="String" />
+		<field name="status" type="String" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.tcpl.sas.model.SkillSet">
+		<field name="uuid" type="String" />
+		<field name="skillSetId" type="long" />
+		<field name="skillSetName" type="String" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.tcpl.sas.model.SourceVendor">
+		<field name="sourceVendorId" type="long" />
+		<field name="empName" type="String" />
+		<field name="empEmail" type="String" />
+		<field name="empMobile" type="String" />
+		<field name="empDob" type="Date" />
+		<field name="empExperience" type="long" />
+		<field name="empLocation" type="String" />
+		<field name="cvId" type="long" />
+		<field name="cvPath" type="String" />
+		<field name="statusByCustomer" type="String" />
+		<field name="statusByRM" type="Boolean" />
+		<field name="deployedOnCustomer" type="Boolean" />
+		<field name="groupId" type="long" />
+		<field name="userId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>
